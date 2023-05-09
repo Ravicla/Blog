@@ -7,10 +7,23 @@ import javax.persistence.*;
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id_categoria")
     private Integer idCategoria;
-    @Column(name = "nombre")
     private String categoria;
 
+    public Integer getIdCategoria() {
+        return idCategoria;
+    }
 
+    public void setIdCategoria(Integer idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 }
