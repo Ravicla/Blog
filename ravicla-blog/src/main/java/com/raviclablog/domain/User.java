@@ -15,7 +15,7 @@ public class User {
     private String password;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    private List<BlogPost> posts;
+    private List<BlogPost> blogPosts;
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private List<Comment> comments;
 
@@ -74,13 +74,14 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-    @JsonProperty("posts")
-    public List<BlogPost> getPosts() {
-        return posts;
+
+    @JsonProperty("blogPosts")
+    public List<BlogPost> getBlogPosts() {
+        return blogPosts;
     }
 
-    public void setPosts(List<BlogPost> posts) {
-        this.posts = posts;
+    public void setBlogPosts(List<BlogPost> blogPosts) {
+        this.blogPosts = blogPosts;
     }
 
     @JsonProperty("comments")

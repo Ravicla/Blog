@@ -9,6 +9,9 @@ public class Comment {
     private int blogPostId;
     private int userId;
 
+    public Comment() {
+
+    }
 
     public int getCommentId() {
         return commentId;

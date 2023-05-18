@@ -1,6 +1,7 @@
 package com.raviclablog.domain;
 
 import java.util.Date;
+import java.util.Locale;
 
 public class BlogPost {
     private int blogPostId;
@@ -10,6 +11,21 @@ public class BlogPost {
     private String image;
     private int userId;
     private int categoryId;
+    private Locale.Category category;
+
+
+
+    public BlogPost() {
+
+    }
+
+    public Locale.Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Locale.Category category) {
+        this.category = category;
+    }
 
     public int getBlogPostId() {
         return blogPostId;

@@ -15,7 +15,8 @@ public class Usuario {
     private String email;
     @Column(name = "imagen_url")
     private String foto;
-    private String contraseña;
+    @Column(name = "contraseña")
+    private String clave;
 
 
     public Integer getIdUsuario() {
@@ -66,12 +67,12 @@ public class Usuario {
         this.foto = foto;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getClave() {
+        return clave;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setClave(String clave) {
+        this.clave = clave;
     }
 }
 
